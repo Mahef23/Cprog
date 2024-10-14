@@ -12,10 +12,16 @@ char* palyndrome( char num[]){
 		}
 	return "Palyndrome";
 }
-/*void marks(int mark){
-	
-}*/
+void marks(int mark){
+	if(mark <60) printf("Fail");
+	else if (mark>=60 && mark<70)printf("Pass");
+	else if (mark>=70 && mark<80)printf("Enough Good");
+	else if (mark>=80 && mark<90)printf("Good");
+	else if (mark>=90 && mark<100)printf("Very Good");
+	else printf("Excellent");
+}
 int main (){
-	printf("%s",palyndrome("121"));
+	//printf("%s",palyndrome("121"));
+	marks(120);
 return 0;
 }
