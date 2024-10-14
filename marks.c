@@ -1,16 +1,21 @@
 #include <stdio.h>
 #include <string.h>
 
-int main (){
-	char num[]="122251";
+char* palyndrome( char num[]){
 	int i=0, n=strlen(num)-1;
 		for (i=0; i<= n/2 ; i++){
 			if(num[i]==num[n-i]);
 			else {
-				printf("Not");
+				return "Not Palyndrome";
 				break;
 				}
 		}
-	printf("palyndrome");
+	return "Palyndrome";
+}
+/*void marks(int mark){
+	
+}*/
+int main (){
+	printf("%s",palyndrome("121"));
 return 0;
 }
