@@ -13,7 +13,7 @@ char* palyndrome( char num[]){
 	return "Palyndrome";
 }
 void marks(int mark){
-	if(mark <60) printf("Fail");
+	if(mark <60) printf("Fail git ");
 	else if (mark>=60 && mark<70)printf("Pass");
 	else if (mark>=70 && mark<80)printf("Enough Good");
 	else if (mark>=80 && mark<90)printf("Good");
